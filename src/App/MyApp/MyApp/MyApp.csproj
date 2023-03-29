@@ -49,25 +49,17 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Remove="Views\MainPage.xaml.cs" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiXaml Remove="Views\MainPage.xaml" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <PackageReference Include="Autofac" Version="7.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Views\MainPage1.xaml.cs">
-	    <DependentUpon>MainPage1.xaml</DependentUpon>
+	  <Compile Update="Views\MainPage.xaml.cs">
+	    <DependentUpon>MainPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Views\MainPage1.xaml">
+	  <MauiXaml Update="Views\MainPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

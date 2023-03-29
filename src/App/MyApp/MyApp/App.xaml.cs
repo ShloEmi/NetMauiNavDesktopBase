@@ -15,10 +15,11 @@ public partial class App : Application
 
         // MainPage = new AppShell();
         var builder = new ContainerBuilder();
+
         builder.RegisterType<MainViewModel>().SingleInstance();
+
         Container = builder.Build();
 
-        MainPage = new NavigationPage(new MainPage1());
-
+        MainPage = new NavigationPage(new MainPage(Container.Resolve<MainViewModel>()));
     }
 }
