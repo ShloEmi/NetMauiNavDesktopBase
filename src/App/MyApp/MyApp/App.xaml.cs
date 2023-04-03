@@ -13,7 +13,6 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-        // MainPage = new AppShell();
         var builder = new ContainerBuilder();
 
         builder.RegisterType<MainViewModel>().SingleInstance();
